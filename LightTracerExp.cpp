@@ -76,7 +76,6 @@ Hit RayCast(Ray& ray, int depth)
 	Hit rayHit = DetectSceneHit(ray);
 	if (rayHit.t_ != std::numeric_limits<float>::infinity()) {
 		// 此处填写代码，对rayHit.material_.color_赋值
-		//rayHit.material_.color_ = Color(25.0f, 25.0f, 25.0f);//仅用于程序正常运行，填写代码后应删除
 		
 		Sphere* obj = (Sphere*) *objects.begin();
 
